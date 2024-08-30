@@ -37,7 +37,6 @@
   },
   "dependencies": {
     "@inubekit/foundations": "^5.10.0",
-    "@inubekit/icon": "^1.9.0",
     "@inubekit/stack": "^2.4.0",
     "@inubekit/label": "^2.14.0",
     "@inubekit/text": "^2.13.0"
