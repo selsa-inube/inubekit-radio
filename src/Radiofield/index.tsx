@@ -1,0 +1,58 @@
+import React from "react";
+import { Stack } from "@inubekit/stack";
+import { Label } from "@inubekit/label";
+import { Text } from "@inubekit/text";
+import { StyledInput, StyledLabel, StyledSpan } from "./styles";
+
+interface IRadiofield {
+  checked?: boolean;
+  disabled?: boolean;
+  id: string;
+  label?: string;
+  name?: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  required?: boolean;
+  value: string;
+}
+
+const Radiofield = ({
+  checked = false,
+  disabled = false,
+  id,
+  label,
+  name,
+  onChange,
+  required = false,
+  value,
+}: IRadiofield) => (
+  <Stack direction="row" alignItems="center" gap="10px" width="fit-content">
+    <StyledLabel>
+      <StyledInput
+        type="radio"
+        id={id}
+        name={name}
+        value={value}
+        checked={checked}
+        disabled={disabled}
+        required={required}
+        onChange={onChange}
+      />
+      <StyledSpan disabled={disabled} />
+    </StyledLabel>
+    {label && (
+      <Label htmlFor={id} disabled={disabled}>
+        <Stack direction="row" alignItems="center" gap="4px">
+          {label}
+          {required && (
+            <Text type="label" appearance="danger" size="small">
+              *
+            </Text>
+          )}
+        </Stack>
+      </Label>
+    )}
+  </Stack>
+);
+
+export { Radiofield };
+export type { IRadiofield };
