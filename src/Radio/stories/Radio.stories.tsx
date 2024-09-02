@@ -1,15 +1,15 @@
-import { IRadiofield } from "..";
-import { RadiofieldController } from "./Radiofield.Controller";
+import { IRadio } from "..";
+import { RadioController } from "./Radio.Controller";
 import { parameters, props } from "../props";
 
 const story = {
-  title: "Inputs/Radiofield",
-  component: RadiofieldController,
+  title: "Inputs/Radio",
+  component: RadioController,
   parameters,
   argTypes: props,
 };
 
-const Default = (args: IRadiofield) => <RadiofieldController {...args} />;
+const Default = (args: IRadio) => <RadioController {...args} />;
 
 Default.args = {
   id: "radio1",
@@ -18,7 +18,7 @@ Default.args = {
   checked: false,
   disabled: false,
   onChange: (e: React.ChangeEvent<HTMLInputElement>) =>
-    console.log(`Radiofield value: ${e.target.value}`),
+    console.log(`Radio value: ${e.target.value}`),
 };
 
 export { Default };

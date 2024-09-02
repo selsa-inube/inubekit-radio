@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { IRadiofield, Radiofield } from "..";
+import { IRadio, Radio } from "..";
 
-const RadiofieldController = (props: IRadiofield) => {
+const RadioController = (props: IRadio) => {
   const { checked } = props;
 
   const [isChecked, setIsChecked] = useState(checked);
@@ -11,7 +11,7 @@ const RadiofieldController = (props: IRadiofield) => {
     props.onChange(event);
   };
 
-  return <Radiofield {...props} checked={isChecked} onChange={handleChange} />;
+  return <Radio {...props} checked={isChecked} onChange={handleChange} />;
 };
 
-export { RadiofieldController };
+export { RadioController };

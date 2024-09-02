@@ -20,6 +20,7 @@ export default defineConfig({
         "@inubekit/foundations",
         "@inubekit/stack",
         "@inubekit/label",
+        "@inubekit/text",
       ],
       output: {
         globals: {

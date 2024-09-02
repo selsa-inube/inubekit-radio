@@ -1,5 +1,5 @@
 {
-  "name": "@inubekit/radiofield",
+  "name": "@inubekit/radio",
   "homepage": "https://inubeds.vercel.app/",
   "author": "inube",
   "main": "dist/index.es.js",
@@ -85,7 +85,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/selsa-inube/inubekit-radiofield.git"
+    "url": "git+https://github.com/selsa-inube/inubekit-radio.git"
   },
   "auto": {
     "plugins": [

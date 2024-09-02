@@ -1,2 +1,2 @@
-export { Radiofield } from "./Radiofield";
-export type { IRadiofield } from "./Radiofield";
+export { Radio } from "./Radio";
+export type { IRadio } from "./Radio";
