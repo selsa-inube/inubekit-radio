@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { inube } from "@inubekit/foundations";
+import { tokens } from "./Tokens/tokens";
 
 const StyledLabel = styled.label`
   display: inline-block;
@@ -15,11 +15,10 @@ const StyledInput = styled.input`
 
   &:checked + span {
     border-color: ${({ theme }) =>
-      theme?.radiofield?.border?.color?.checked ||
-      inube.radiofield.border.color.checked};
+      theme?.radiofield?.border?.color?.checked || tokens.border.color.checked};
     background-color: ${({ theme }) =>
       theme?.radiofield?.background?.color?.checked ||
-      inube.radiofield.background.color.checked};
+      tokens.background.color.checked};
 
     &:after {
       content: "";
@@ -29,7 +28,7 @@ const StyledInput = styled.input`
       border-radius: 50%;
       background: ${({ theme }) =>
         theme?.radiofield?.foreground?.color?.checked ||
-        inube.radiofield.foreground.color.checked};
+        tokens.foreground.color.checked};
       position: absolute;
       top: 50%;
       left: 50%;
@@ -40,18 +39,17 @@ const StyledInput = styled.input`
   &:focus + span {
     outline: 2px solid
       ${({ theme }) =>
-        theme?.radiofield?.outline?.color?.hover ||
-        inube.radiofield.outline.color.hover};
+        theme?.radiofield?.outline?.color?.hover || tokens.outline.color.hover};
     outline-offset: 2px;
   }
 
   &:disabled + span {
     border-color: ${({ theme }) =>
       theme?.radiofield?.border?.color?.disabled ||
-      inube.radiofield.border.color.disabled};
+      tokens.border.color.disabled};
     background-color: ${({ theme }) =>
       theme?.radiofield?.background?.color?.disabled ||
-      inube.radiofield.background.color.disabled};
+      tokens.background.color.disabled};
   }
 `;
 
@@ -62,11 +60,10 @@ const StyledSpan = styled.span`
   border-radius: 50%;
   border: 2px solid
     ${({ theme }) =>
-      theme?.radiofield?.border?.color?.active ||
-      inube.radiofield.border.color.active};
+      theme?.radiofield?.border?.color?.active || tokens.border.color.active};
   background-color: ${({ theme }) =>
     theme?.radiofield?.background?.color?.active ||
-    inube.radiofield.background.color.active};
+    tokens.background.color.active};
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   position: absolute;
   top: 50%;
@@ -75,8 +72,7 @@ const StyledSpan = styled.span`
 
   &:hover {
     border-color: ${({ theme }) =>
-      theme?.radiofield?.outline?.color?.hover ||
-      inube.radiofield.outline.color.hover};
+      theme?.radiofield?.outline?.color?.hover || tokens.outline.color.hover};
   }
 `;
 
