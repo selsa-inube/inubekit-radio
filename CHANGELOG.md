@@ -1,3 +1,15 @@
+# v1.1.0 (Thu Sep 26 2024)
+
+#### 🚀 Enhancement
+
+- Move radio tokens from foundations to component [#2](https://github.com/selsa-inube/inubekit-radio/pull/2) ([@cmarin001](https://github.com/cmarin001))
+
+#### Authors: 1
+
+- Cesar Marin Alfonso ([@cmarin001](https://github.com/cmarin001))
+
+---
+
 # v1.0.1 (Mon Sep 02 2024)
 
 #### ⚠️ Pushed to `main`
